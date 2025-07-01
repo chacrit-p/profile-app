@@ -1,9 +1,8 @@
-import { Stack } from "expo-router";
+import '../global.css'
+import { Slot } from "expo-router";
 
 export default function Layout() {
     return (
-        <Stack>
-            <Stack.Screen name="index" options={{ title: "Profile" }} />
-        </Stack>
+        <Slot />
     );
 }
